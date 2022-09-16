@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous">
+        <style>
+            body{ 
+                height: 100vh;
+                background-color: aqua;
+                height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+                background-image: url(https://th.bing.com/th/id/R.1a14c7fc3a666ba67ed974b3a0a632d7?rik=rGJiUXHZbEiGMw&riu=http%3a%2f%2fimg.jakpost.net%2fc%2f2016%2f06%2f16%2f2016_06_16_6659_1466076666._large.jpg&ehk=hdMp8Tit8xMo3ow0%2bn3TQ5EOmN6iZ%2fTGT97ovF1u4z4%3d&risl=&pid=ImgRaw&r=0);
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+              <!-- Indicators -->
+              <!-- <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              
+              </ol> -->
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <div class="card mx-auto" style="width: 35rem; height: auto; margin-top: 13%;">
+                        <main class="w-100 h-100 d-flex justify-content-center align-items-center flex-column" style="background-color:aqua;">
+                            <h1>Login</h1>
+                            <form class="col-9" action="">
+                                <label for="username">Username</label>
+                                <input
+                                    type="text"
+                                    name="username"
+                                    id="username"   
+                                    class="form-control mb-lg-3"
+                                    placeholder="Masukkan Username">
+                
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control mb-lg-3" placeholder="Masukkan Email Anda">
+                
+                                <label for="password">Password</label>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    class="form-control mb-lg-3"
+                                    placeholder="Masukkan Password">
+                                
+                                <button class="btn btn-primary col-lg-12 mb-lg-4">Simpan</button>
+                            </form>
+                        </main>
+                    </div>
+                </div>
+          
+                <div class="item">
+                    <div class="card mx-auto" style="width: 35rem; height: auto; margin-top: 13%;">
+                        <main class="w-100 h-100 d-flex justify-content-center align-items-center flex-column" style="background-color:aqua;">
+                            <h1>Sign Up</h1>
+                            <form class="col-9" action="">
+                                <label for="username">Nama</label>
+                                <input
+                                    type="text"
+                                    name="nama"
+                                    id="nama"   
+                                    class="form-control mb-lg-3"
+                                    placeholder="Masukkan Nama">
+
+                                    <label for="tglLahir">Tanggal Lahir</label>
+                                <input
+                                    type="date"
+                                    name="tglLahir"
+                                    id="tglLahir"   
+                                    class="form-control mb-lg-3"
+                                    >
+
+                                    <label for="keluarga">Jumlah Anggota Keluarga</label>
+                                <input
+                                    type="number"
+                                    name="keluarga"
+                                    id="keluarga"   
+                                    class="form-control mb-lg-3"
+                                    max="4"
+                                    placeholder="Max 4 Keluarga"
+                                    >
+
+                                    <label for="telpon">Masukan No telpon anda</label>
+                                <input
+                                    type="tel"
+                                    name="telpon"
+                                    id="telpon"   
+                                    class="form-control mb-lg-3"
+                                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                    >
+
+                                    <label for="warna">Warna Favorit</label>
+                                <input
+                                    type="color"
+                                    name="warna"
+                                    id="warna"   
+                                    class="form-control mb-lg-3"
+                                    >
+                                <label for="username">Username</label>
+                                <input
+                                    type="text"
+                                    name="username"
+                                    id="username"   
+                                    class="form-control mb-lg-3"
+                                    placeholder="Masukkan Username">
+                
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control mb-lg-3" placeholder="Masukkan Email Anda">
+                
+                                <label for="password">Password</label>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    class="form-control mb-lg-3"
+                                    placeholder="Masukkan Password">
+                                
+                                <button class="btn btn-primary col-lg-12 mb-lg-4">Simpan</button>
+                            </form>
+                        </main>
+                    </div>
+                </div>
+              
+                
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+        <!-- <div class="card mx-auto" style="width: 35rem; height: auto; margin-top: 13%;">
+        <main class="w-100 h-100 d-flex justify-content-center align-items-center flex-column" style="background-color:aqua;">
+            <h1>Login</h1>
+            <form class="col-9" action="">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"   
+                    class="form-control mb-lg-3"
+                    placeholder="Masukkan Username">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control mb-lg-3" placeholder="Masukkan Email Anda">
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control mb-lg-3"
+                    placeholder="Masukkan Password">
+                
+                <button class="btn btn-primary col-lg-12 mb-lg-4">Simpan</button>
+            </form>
+        </main>
+    </div> -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

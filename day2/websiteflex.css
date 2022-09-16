@@ -1,0 +1,85 @@
+*{ 
+    box-sizing: border-box;
+}
+html{ 
+    scroll-behavior: smooth;
+}
+body{ 
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{ 
+    padding: 0;
+    margin: 0;
+}
+
+nav{ 
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    
+}
+.header{ 
+    background-color: brown;
+    text-align: center;
+   
+}
+.menu{ 
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: chartreuse;
+}
+.main{ 
+    width: 50%;
+    background-color: rgb(43, 154, 65);
+}   
+
+.wrapperutama{
+    display: flex;
+    flex-direction: row;
+    /* width: 50%; */
+    background-color: aliceblue;
+    justify-content: center;
+    align-content: center;
+}
+.wrappermainright{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper1{ 
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: rgb(82, 157, 222);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly */
+}
+.wrapper2{ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(12, 42, 68);
+    justify-content: center;
+    align-content: center;
+    /* justify-content: space-evenly */
+}
+
+.right{ 
+    width: 50%;
+        background-color: rgb(133, 133, 144);
+}
+.footer{ 
+    text-align: center;
+    background-color: darkorange;
+}

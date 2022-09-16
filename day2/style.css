@@ -1,0 +1,72 @@
+*{ 
+    box-sizing: border-box;
+}
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header style */
+header{ 
+    background-color: grey;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* untuk seksion */
+section{ 
+    /* width: 30%; */
+    height: 450px;
+    color: black;
+}
+section aside{ 
+    float: left;
+    height: 100%;
+    width: 30%;
+    background-color: aqua;
+}
+section > article{ 
+    float: right;
+    height: 100%;
+    background-color: green;
+    width: 70%;
+}
+
+/* footer style */
+footer{ 
+    text-align: center;
+    background-color: brown;
+    height: auto;
+}
+
+footer h2{ 
+    margin: 0;
+    padding: 0;
+}
+
+#kotak{ 
+    width: 40px;
+    height: 50px;
+    background-color: black;
+    padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+  section{ 
+    height: fit-content;
+  }
+section aside{ 
+    float: unset;
+    width: 100%;
+  }
+  section article{ 
+    float: unset;
+    width: 100%;
+  }
+  footer{ 
+    
+  }
+  }
