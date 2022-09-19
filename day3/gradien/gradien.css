@@ -1,0 +1,14 @@
+body{ 
+    margin:0;
+    padding: 0;
+}
+main{ 
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    /* Created with https://www.css-gradient.com */
+background: rgba(24, 87, 129, 1.0);
+background: -webkit-linear-gradient(bottom, rgba(24, 87, 129, 1.0), rgba(139, 86, 89, 1.0));
+background: -moz-linear-gradient(bottom, rgba(24, 87, 129, 1.0), rgba(139, 86, 89, 1.0));
+background: linear-gradient(to top, rgba(24, 87, 129, 1.0), rgba(139, 86, 89, 1.0));
+}

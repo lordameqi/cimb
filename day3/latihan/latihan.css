@@ -1,0 +1,110 @@
+:root {
+
+    /* --bg-black-main:black;
+    --border_default: 2px solid red; */
+
+    --header: blue;
+    --content: white;
+    --sebelah: cyan;
+    --footer: rgb(98, 163, 17);
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+.utama {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    grid-template-areas: 'header header header header header header header header header header header header' 
+    'content content content content content content content content content sebelah sebelah sebelah' 
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+    /* Created with https://www.css-gradient.com */
+    background: rgba(221, 199, 142, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(221, 199, 142, 1.0), rgba(122, 184, 172, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(221, 199, 142, 1.0), rgba(122, 184, 172, 1.0));
+    background: linear-gradient(to top, rgba(221, 199, 142, 1.0), rgba(122, 184, 172, 1.0));
+}
+.header {
+    background-color: var(--header);
+    grid-area: header;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.header > h1{ 
+    text-align: center;
+}
+.content {
+    background-color: var(--content);
+    grid-area: content;
+    height: 80vh;
+    
+}
+.content-card{ 
+    
+        display: inline-block;
+        padding: 0 25px;
+        margin: 3%;
+        height: 90%;
+        width: 94%;
+        font-size: 16px;
+        line-height: 50px;
+        border-radius: 25px;
+        /* background-color: #f1f1f1; */
+        background-image: url(https://pa1.narvii.com/6413/1d84a64178524bc4d453a8b9b25f02acb1e7714b_hq.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+}
+.content-card > h1{ 
+    text-align: center;
+}
+.sebelah {
+    background-color: var(--sebelah);
+    grid-area: sebelah;
+    height: 80vh;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover;
+    background-image: url(https://th.bing.com/th/id/R.920e98e5b479c8a2743d0c338a8db83c?rik=QkSgY4E7TbtylQ&riu=http%3a%2f%2f38.media.tumblr.com%2f556b6968c25b1faf8475cfad23a9cfe6%2ftumblr_mz2w2ndEiD1tp2tzao1_500.gif&ehk=wIAbJWG98xJ7TRYkMX2dbWfbGUehQVrecsqf%2bpMR5mU%3d&risl=&pid=ImgRaw&r=0); */
+}
+.footer {
+    background-color: var(--footer);
+    grid-area: footer;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    /* Created with https://www.css-gradient.com */
+    background: rgba(221, 199, 142, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(221, 199, 142, 1.0), rgba(122, 184, 172, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(221, 199, 142, 1.0), rgba(122, 184, 172, 1.0));
+    background: linear-gradient(to top, rgba(221, 199, 142, 1.0), rgba(122, 184, 172, 1.0));
+
+}
+#menu {
+    display:flex;
+    justify-content: space-between;
+}

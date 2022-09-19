@@ -1,0 +1,5 @@
+main{ 
+    height: calc(100vh - 200px);
+    background-color: blue;
+    width: 100vw;
+}

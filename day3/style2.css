@@ -1,0 +1,9 @@
+:root{ 
+    --bg-black-main:black;
+    --border_default: 2px solid red;
+}
+p{ 
+    color: white;
+    background-color: var(--bg-black-main);
+    border: var(--border_default);
+}
