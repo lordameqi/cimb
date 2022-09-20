@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <marquee behavior="" direction="">Latihan 1</marquee>
+        <form action="">
+            <div class="mb-3 p-4">
+                <label for="password" class="form-label">Password</label>
+                <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="name@example.com">
+                <button class="btn btn-primary mt-3" id="submit">Simpan</button>
+            </div>
+        </form>
+        <h1 id="hasil"></h1>
+        <script>
+            document.getElementById("submit").onclick = function(e){
+                e.preventDefault();
+
+                const asli = "123456";
+                let password = document.getElementById("password").value.toLowerCase();
+                console.log(password);
+
+                if (password != asli ) {
+                    document.getElementById("hasil").innerText = "Salah";
+                } else {
+                    document.getElementById("hasil").innerText = "Benar, berhasil Masuk";
+                }
+            }
+        </script>
+    </body>
+</html>

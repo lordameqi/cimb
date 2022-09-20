@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="greeting"></div>
+    <span id="hometown"></span>
+
+    <div id="greeting2"></div>
+    <span id="hometown2"></span>
+    <script>
+        let visitor_name = prompt("Masukkan Nama Anda");
+        let town = prompt("Dimans Kampung anda?");
+
+        document.querySelector("div#greeting").textContent = visitor_name;
+        document.querySelector("span#hometown").textContent = town;
+
+        document.querySelector("div#greeting2").innerHTML = '<b> nama anda adalah '+visitor_name+'</b>';
+        document.querySelector("span#hometown2").innerHTML = '<b> kampung halaman anda adalah '+ town+'</b>'
+    </script>
+</body>
+</html>

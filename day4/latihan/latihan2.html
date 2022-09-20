@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <marquee behavior="" direction="">Latihan 2</marquee>
+        <form action="">
+            <div class="mb-3 p-4">
+                <label for="angka" class="form-label">Password</label>
+                <input
+                    type="number"
+                    class="form-control"
+                    id="angka"
+                    min="1"
+                    max="100"
+                    placeholder="Masukkan angka">
+                <input type="submit" class="btn btn-primary mt-3" id="submit"></input>
+            </div>
+        </form>
+        <h1 id="hasil"></h1>
+        <script>
+            document
+                .getElementById("submit")
+                .onclick = function (e) {
+                    e.preventDefault();
+
+                    // const asli = "123456";
+                    let password = document
+                        .getElementById("angka")
+                        .value
+                        .toLowerCase();
+                    console.log(password);
+
+                    if (password > 0 && password <= 100) {
+                        if ((password >= 80) && (password <= 100)) {
+                            document.getElementById("hasil").innerText = "grade A";
+                        } else if ((password >= 60) && (password <= 80)) {
+                            document.getElementById("hasil").innerText = "grade B";
+                        } else if ((password >= 40) && (password <= 60)) {
+                            document.getElementById("hasil").innerText = "grade C";
+                        } else {
+                            document.getElementById("hasil").innerText = "grade D";
+                        }
+                    } else {
+                        document.getElementById("hasil").innerText = "cant calculate";
+                    }
+
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Latihan jquery</h1>
+        <div class="text1"></div>
+        <div class="text2"></div>
+        <div id="text3">ini id</div>
+        <div>
+            <img src="" alt="">
+        </div>
+        <p>ini harusnya ilang</p>
+        <input type="text" id="masukan">
+        
+        <script>
+            $('.text1').text('Halo, Selamat Pagi');
+            $('.text2').html('<span>halowha</span>');
+            $('.text1').css({'color': 'cyan', 'padding-left': '50%'});
+            $('.text1').append("<p id='akor'>accordion</p>");
+            $('#akor').css({'color': 'black'});
+            $('.text1').prepend("<p> ini prpeend</p>");
+            // $('img').attr('src','https://media-exp1.licdn.com/dms/image/C5622AQHj2KAvXw9nOw/feedshare-shrink_1280/0/1663589002666?e=1666828800&v=beta&t=h_DYAO8Vw5V0m3cr13Z9DDNn4VhWasRR8_A2o1MMvAs');
+            $('p').hide();
+            $('p').show();
+            $('#text3').addClass('yuhu');
+            var checkclass = $('#text3').hasClass('yuhu');
+            console.log(checkclass);
+            $('#masukan').val("hore discord ilang");
+
+        </script>
+    </body>
+</html>
