@@ -19,4 +19,4 @@ document.querySelector("div#pushKeempat").innerHTML = '<b> bucket listnya adalah
 
 my_bucket_list.shift();
 console.log(my_bucket_list);
-document.querySelector("div#pushKelima").innerHTML = '<b> bucket listnya adalah '+my_bucket_list+'</b>';
+document.querySelector("div#pushKelima").innerHTML = '<b> bucket listnya adalah yui'+my_bucket_list+'</b>';
