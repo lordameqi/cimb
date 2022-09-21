@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let binatang = ["singa","harimau","puma","kuda"];
+        // console.log(binatang[0]);
+        // console.log(binatang[1]);
+        // console.log(binatang);
+        // binatang.push("tower");
+        // console.log(binatang[4]);
+        // console.log(binatang);
+        // binatang.pop();
+        // console.log(binatang);
+
+        binatang.unshift("si putih");
+        console.log(binatang);
+        binatang.shift();
+        console.log(binatang);
+
+        console.log(binatang.join());
+        console.log(binatang.sort());
+        console.log(binatang.slice(0,2));
+
+        let hewan = ["singa","harimau","kuda"];
+        hewan.splice(1,0,"udin");
+        console.log(hewan);
+
+        let kalimat = "bootcamp cimb niaga";
+        let pecah = kalimat.split(" ");
+        console.log(pecah);
+
+        pecah.splice(1,0,"bank");
+        //  pecah.join(" ");
+        console.log(pecah.toString().replaceAll(","," "));
+    </script>
+</body>
+</html>

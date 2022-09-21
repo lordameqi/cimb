@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // cetak angka 1 - 10 pake for
+            for (let index = 0; index < 10; index++) {
+                console.log("angka sekarang " + (
+                    index + 1
+                ));
+            }
+            console.log("----------------");
+            //cetak 10 ke 1 menggunakan for loop
+            for (let index = 10; index > 0; index--) {
+                console.log(index);
+
+            }
+            console.log("-----------------");
+            //cetak angka genap 1 - 10 for loop
+            for (let index = 1; index < 10; index++) {
+                if (index % 2 == 0) {
+                    console.log(`angka genap ${index}`);
+                }
+
+            }
+            console.log("-------------------------------------");
+            //cetak angka ganjil 1- 10
+            for (let index = 1; index < 10; index++) {
+                if (index % 2 == 1) {
+                    console.log(`angka ganjil ${index}`);
+                }
+
+            }
+
+            //cetak huruf vokal (aiueo) pada kalimat bootcamp cimb Niaga
+            var kalimat = 'bootcamp cimb niaga';
+            //cara 1
+            var kalimat = 'bootcamp cimb niaga';
+            var vokal = 'aiueo';
+            console.log('mencetak huruf vokal pada sebuah kalimat')
+            for (let index = 0; index < kalimat.length; index++) {
+
+                if (vokal.includes(kalimat[index])) {
+                    console.log(`cara 1 = ${kalimat[index]}`);
+                }
+            }
+
+            //cara 2
+            for (let index = 0; index < kalimat.length; index++) {
+                if (kalimat[index] == 'a' || kalimat[index] == 'i' || kalimat[index] == 'u' || kalimat[index] == 'e' || kalimat[index] == 'o') {
+                    console.log("cetak huruf vokal " + kalimat[index]);
+                }
+
+            }
+
+            //huruf selain vokal
+            var emptyArray = [];
+            for (let index = 0; index < kalimat.length; index++) {
+                if (kalimat[index] != 'a' && kalimat[index] != 'i' && kalimat[index] != 'u' && kalimat[index] != 'e' && kalimat[index] != 'o' ) {
+                    if (kalimat[index] != ' ') {
+                        // console.log("cetak huruf konsonan " + kalimat[index]);
+                        emptyArray.push(kalimat[index]);
+                    }
+                }
+            }
+            console.log("cetak huruf konsonan " + emptyArray.toString());
+        </script>
+    </body>
+</html>
