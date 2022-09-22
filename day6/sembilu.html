@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Masukkan Nama Buah</h1>
+    <input type="hidden" id="hfRowIndex" value="" />
+    <form name="masukan" action="" method="post">
+        <label for="masukanid">masukanID</label>
+        <input type="number" name="masukanid" id="masukanid">
+
+        <label for="masukan">masukan</label>
+        <input type="text" name="masukan" id="masukan">
+        <td>
+        <button type='button' id='btnAdd' onclick="add()">Add</button>
+        <button type='button' id='btnUpdate' style="display: none;">Update</button>
+         </td>
+    </form>
+    <table border="2" id="datatabel">
+        <tr>
+            <th>ID</th>
+            <th>NamaBuah</th>
+            <th>Action Ubah</th>
+            <th>Action Hapus</th>
+        </tr>
+     
+    </table>
+</body>
+<script src="sembilu.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</html>
