@@ -5,6 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Fpb",
+            "request": "launch",
+            "mainClass": "day9.Fpb",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Phytagoras",
+            "request": "launch",
+            "mainClass": "day9.Phytagoras",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch cimb",
+            "request": "launch",
+            "mainClass": "day9.cimb",
+            "projectName": "cimb_cca062a0"
+        },
+        {
             "type": "msedge",
             "request": "launch",
             "name": "Launch Edge against localhost",

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .kotak{ 
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            margin: 5px auto 0;
+            transition: 2s;
+        }
+        .kotak:hover{ 
+            transform: rotate(45deg);
+        }
+        p{ 
+            text-align: center;
+        }
+        .kotak2{ 
+            /* background-color: blue; */
+            width: 200px;
+            height: 200px;
+            margin: 5px auto 0;
+            transition: 2s;
+            display:flex;
+        }
+        .kotak2 > img{ 
+            width: 200px;
+            height: 200px;
+        }
+        img:hover{ 
+          animation: rotation 1s infinite linear;
+        }
+        @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+        
+    </style>
+  </head>
+  <body>
+
+    <div class="kotak"></div>
+    <p>contoh transform</p>
+    <!-- <h1>Hello, world!</h1> -->
+
+    <div class="kotak2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mangekyou_Sharingan_Itachi.svg/1200px-Mangekyou_Sharingan_Itachi.svg.png" alt="" srcset="">
+
+        <img src="https://cdn.pixabay.com/photo/2021/02/25/14/12/rinnegan-6049194_1280.png" alt="" srcset="">
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

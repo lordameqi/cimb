@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            li {
+                list-style: none;
+                background: #d1703c;
+                color: #fff;
+                height: 0;
+                line-height: 2em;
+                margin: 0;
+                padding: 0 0.5em;
+                overflow: hidden;
+                width: 10em;
+            }
+
+            li.show {
+                height: 2em;
+                margin: 2px 0;
+            }
+            .fade li {
+                transition: all 0.4s ease-out;
+                opacity: 0;
+                height: 2em;
+            }
+            .fade li.show {
+                opacity: 1;
+            }
+
+            .slide-fade li {
+  transition: all 0.4s ease-out;
+  opacity: 0;
+}
+.slide-fade li.show {
+  opacity: 1;
+}
+        </style>
+    </head>
+    <body>
+        <ul id="list" class="slide-fade">
+            <li class="show">List item</li>
+            <li class="show">List item</li>
+        </ul>
+        <button id="add-to-list">Add a list item</button>
+    </body>
+    <script>
+        document
+            .getElementById('add-to-list')
+            .onclick = function () {
+                var list = document.getElementById('list');
+                var newLI = document.createElement('li');
+                newLI.innerHTML = 'A new item';
+                list.appendChild(newLI);
+                setTimeout(function () {
+                    newLI.className = newLI.className + " show";
+                }, 10);
+            }
+    </script>
+</html>
