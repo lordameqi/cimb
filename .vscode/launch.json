@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BinarySearch",
+            "request": "launch",
+            "mainClass": "day11.arraykan.BinarySearch",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array2Dimensi",
+            "request": "launch",
+            "mainClass": "day11.arraykan.Array2Dimensi",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan3Contoh",
+            "request": "launch",
+            "mainClass": "day11.arraykan.Latihan3Contoh",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan2Contoh",
+            "request": "launch",
+            "mainClass": "day11.arraykan.Latihan2Contoh",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan",
+            "request": "launch",
+            "mainClass": "day11.arraykan.Latihan",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Halo",
+            "request": "launch",
+            "mainClass": "day11.arraykan.Halo",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arraykan",
+            "request": "launch",
+            "mainClass": "day11.arraykan.Arraykan",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan5b",
+            "request": "launch",
+            "mainClass": "day11.assignment1_RachmadFadillah.Latihan5b",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan5a",
+            "request": "launch",
+            "mainClass": "day11.assignment1_RachmadFadillah.Latihan5a",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan4",
+            "request": "launch",
+            "mainClass": "day11.assignment1_RachmadFadillah.Latihan4",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan3",
+            "request": "launch",
+            "mainClass": "day11.assignment1_RachmadFadillah.Latihan3",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan1",
+            "request": "launch",
+            "mainClass": "day11.assignment1_RachmadFadillah.Latihan1",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan2",
+            "request": "launch",
+            "mainClass": "day11.assignment1_RachmadFadillah.Latihan2",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan5",
+            "request": "launch",
+            "mainClass": "day11.assignment1_RachmadFadillah.Latihan5",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
             "name": "Launch Luhn",
             "request": "launch",
             "mainClass": "day10.Luhn",
