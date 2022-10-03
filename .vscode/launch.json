@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Luhn",
+            "request": "launch",
+            "mainClass": "day10.Luhn",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Monetary",
+            "request": "launch",
+            "mainClass": "day10.Monetary",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch PerulanganDoWhile",
+            "request": "launch",
+            "mainClass": "day10.PerulanganDoWhile",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch PerulanganWhile",
+            "request": "launch",
+            "mainClass": "day10.PerulanganWhile",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch PerulanganForeach",
+            "request": "launch",
+            "mainClass": "day10.PerulanganForeach",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Foran",
+            "request": "launch",
+            "mainClass": "day10.Foran",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchDemo",
+            "request": "launch",
+            "mainClass": "day10.SwitchDemo",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lampu",
+            "request": "launch",
+            "mainClass": "day10.Lampu",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Operator",
+            "request": "launch",
+            "mainClass": "day10.Operator",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
             "name": "Launch Fpb",
             "request": "launch",
             "mainClass": "day9.Fpb",
