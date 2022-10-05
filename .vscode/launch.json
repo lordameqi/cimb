@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Latihan5",
+            "request": "launch",
+            "mainClass": "day12.oop.Latihan5",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan4",
+            "request": "launch",
+            "mainClass": "day12.oop.Latihan4",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan3",
+            "request": "launch",
+            "mainClass": "day12.oop.Latihan3",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan2",
+            "request": "launch",
+            "mainClass": "day12.oop.Latihan2",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Latihan1",
+            "request": "launch",
+            "mainClass": "day12.oop.Latihan1",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cetak",
+            "request": "launch",
+            "mainClass": "day12.oop.Cetak",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Makanan",
+            "request": "launch",
+            "mainClass": "day12.oop.Makanan",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "day12.oop.Main",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Node",
+            "request": "launch",
+            "mainClass": "day11.arraykan.Node",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
             "name": "Launch BinarySearch",
             "request": "launch",
             "mainClass": "day11.arraykan.BinarySearch",
