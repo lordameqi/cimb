@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Demonstration4",
+            "request": "launch",
+            "mainClass": "day13.Demonstration4",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
             "name": "Launch Binary",
             "request": "launch",
             "mainClass": "day13.Binary",
