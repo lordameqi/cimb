@@ -25,8 +25,9 @@ public class Latihan1 {
 
         double max = besar(arraykan);
         double min = kecil(arraykan);
-        System.out.println(max + " adalah bilangan terbesar");
-        System.out.println(min + " adalah bilangan terkecil");
+        System.out.println((int) max + " adalah bilangan terbesar");
+        System.out.println((int) min + " adalah bilangan terkecil");
+        in.close();
     }
 
     public static double ratarata(int[] data) {

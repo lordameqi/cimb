@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Binary",
+            "request": "launch",
+            "mainClass": "day13.Binary",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch BubbleSort",
+            "request": "launch",
+            "mainClass": "day13.BubbleSort",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectionShort",
+            "request": "launch",
+            "mainClass": "day13.SelectionShort",
+            "projectName": "cimb_cca062a0"
+        },
+        {
+            "type": "java",
             "name": "Launch Latihan5",
             "request": "launch",
             "mainClass": "day12.oop.Latihan5",
