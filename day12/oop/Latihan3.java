@@ -1,10 +1,10 @@
 package day12.oop;
 
 import java.util.Scanner;
-import java.net.Socket;
+//import java.net.Socket;
 import java.text.NumberFormat;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
+// import java.text.DecimalFormat;
+// import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 
 public class Latihan3 {

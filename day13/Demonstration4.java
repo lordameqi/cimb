@@ -14,7 +14,7 @@ public class Demonstration4 {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
         System.out.println("Exit-Main");
@@ -25,7 +25,7 @@ class Thread4A extends Thread {
 
     @Override
     public void run() {
-        // TODO Auto-generated method stub
+
         for (int i = 0; i < 5; i++) {
             System.out.println("Thread4A prints -> " + i);
             if (i == 2) {
@@ -48,7 +48,7 @@ class Thread4B extends Thread {
                 try {
                     sleep(5000);
                 } catch (InterruptedException e) {
-                    // TODO: handle exception
+
                     e.printStackTrace();
                 }
             }

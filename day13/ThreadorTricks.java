@@ -13,13 +13,13 @@ public class ThreadorTricks implements Runnable {
 
     @Override
     public void run() {
-        // TODO Auto-generated method stub
+
         System.out.println(name + ": Hellow");
 
         try {
             Thread.sleep(250);
         } catch (InterruptedException e) {
-            // TODO: handle exception
+
             Logger.getLogger(ThreadorTricks.class.getName()).log(Level.SEVERE, null, e);
         }
 

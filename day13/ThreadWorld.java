@@ -11,7 +11,7 @@ public class ThreadWorld extends Thread {
         try {
             Thread.sleep(250);
         } catch (InterruptedException e) {
-            // TODO: handle exception
+
             Logger.getLogger(ThreadWorld.class.getName()).log(Level.SEVERE, null, e);
 
         }
