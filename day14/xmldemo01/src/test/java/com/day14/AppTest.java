@@ -1,4 +1,4 @@
-package day14.xmldemo01.src.test.java.com.day14;
+package com.day14;
 
 import static org.junit.Assert.assertTrue;
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8" xmlns:th="http:///www.thymeleaf.org">
+    <title>Mahasiswa</title>
+</head>
+<body>
+    <h2>Belajar Web Engine thymeleaf meggunakan spring boot</h2>
+    <h2>List Mahasiswa</h2>
+
+    <table>
+        <tr>
+            <th>Nim</th>
+            <th>Nama</th>
+            <th>IPK</th>
+            <th>Jurusan</th>
+            <th>Action</th>
+        </tr>
+        <tr th:each="mhs : ${veve}">
+            <td th:text="${mhs.nim}"></td>
+            <td th:text="${mhs.nama}"></td>
+            <td th:text="${mhs.ipk}"></td>
+            <td th:text="${mhs.jurusan}"></td>
+            <td>
+                <a href="#">edit</a>
+                <a href="#">hapus</a>
+                <a href="#">delete</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

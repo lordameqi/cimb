@@ -1,0 +1,5 @@
+package com.starterkit.springboot.brs.model.user;
+
+public enum UserRoles {
+    ADMIN, PASSENGER, USER
+}
