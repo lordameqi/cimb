@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "09bb3a36-6d5e-4729-928a-dd8ba1893114",
+		"name": "transportation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12056471"
+	},
+	"item": [
+		{
+			"name": "PostAdmin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"mariolawa@gmail.com\",\r\n   \"password\":\"123\",\r\n   \"firstName\":\"mario\",\r\n   \"lastName\":\"polo\",\r\n   \"mobileNumber\":9900876\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/home/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"home",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\":\"admin@gmail.com\",\r\n   \"password\":\"123456\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/home/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"home",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postBookTicket Admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxOTA4OTcsImlhdCI6MTY2NjE5MDQxN30.DvpAxJiDCR7w6m66wyImhbS2F6trRph7bARYiKbx7kfXbHl7HvcjQVIk5e_H1uzlbY31-1v5faX9AbImIQhvrQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"tripID\":1,\r\n   \"tripDate\":\"2022-10-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/bookticket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"bookticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStops Admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxOTA4OTcsImlhdCI6MTY2NjE5MDQxN30.DvpAxJiDCR7w6m66wyImhbS2F6trRph7bARYiKbx7kfXbHl7HvcjQVIk5e_H1uzlbY31-1v5faX9AbImIQhvrQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/stops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"stops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTripbyStops Admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxOTA4OTcsImlhdCI6MTY2NjE5MDQxN30.DvpAxJiDCR7w6m66wyImhbS2F6trRph7bARYiKbx7kfXbHl7HvcjQVIk5e_H1uzlbY31-1v5faX9AbImIQhvrQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"sourceStop\":\"PKU\",\r\n   \"destinationStop\":\"PDG\",\r\n   \"tripDate\":\"2022-10-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/tripsbystops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"tripsbystops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTripbySchedules Admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxOTA4OTcsImlhdCI6MTY2NjE5MDQxN30.DvpAxJiDCR7w6m66wyImhbS2F6trRph7bARYiKbx7kfXbHl7HvcjQVIk5e_H1uzlbY31-1v5faX9AbImIQhvrQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"sourceStop\":\"PKU\",\r\n   \"destinationStop\": \"PDG\",\r\n   \"tripDate\": \"2022-10-15\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/tripschedules",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"tripschedules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\":\"marco1@gmail.com\",\r\n   \"password\":\"123\",\r\n   \"firstName\":\"marco\",\r\n   \"lastName\":\"polo\",\r\n   \"mobileNumber\":1213213123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/home/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"home",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\":\"marco@gmail.com\",\r\n   \"password\":\"123\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/home/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"home",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rahmat23@gmail.com\",\r\n    \"password\":\"101010\",\r\n    \"firstName\":\"Rahmat\",\r\n    \"lastName\":\"Veve\",\r\n    \"mobileNumber\": \"0812348888\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postAddAgency User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJjb0BnbWFpbC5jb20iLCJleHAiOjE2NjYxMzk3ODYsImlhdCI6MTY2NjEzOTMwNn0.gYH71ij7uwuJ04eRXPEucQ0A_ufAhsDUQzQ39TTNey_vTjCOxdvE0plNk92g22Pfb05TQ1KkqARQ_ON1WGzEKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"code\":\"Agency-Duls\",\r\n   \"name\":\"Eduks\",\r\n   \"details\":\"detail agen\",\r\n   \"owner_user_id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/createAgency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"createAgency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postAddBuss",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJjb0BnbWFpbC5jb20iLCJleHAiOjE2NjYxMzk3ODYsImlhdCI6MTY2NjEzOTMwNn0.gYH71ij7uwuJ04eRXPEucQ0A_ufAhsDUQzQ39TTNey_vTjCOxdvE0plNk92g22Pfb05TQ1KkqARQ_ON1WGzEKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"Ed-9009\",\r\n    \"capacity\": 96,\r\n    \"make\":\"Edun\",\r\n    \"agency_id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/buss",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"buss"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

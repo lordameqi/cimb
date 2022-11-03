@@ -47,10 +47,31 @@
 
 // console.log(scott2.getTitleandName());
 
-class Employee{
-    dowork(){
-        console.log("Im Sorry");
+// class Employee{
+//     dowork(){
+//         console.log("Im Sorry");
+//     }
+// }
+
+// export default Employee;
+
+export class Person{
+    constructor(nama){
+        this.name = nama;
+    }
+    getName(){
+        return this.name;
     }
 }
 
-export default Employee;
+export class Employee extends Person{
+    getEmployeeName(){
+        return this.name;
+    }
+    doWork(){
+        return "im a workers"
+    }
+}
+
+// let tes = new Employee("huy");
+// console.log(tes);
